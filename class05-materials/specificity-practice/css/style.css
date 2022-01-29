@@ -1,0 +1,18 @@
+/* Please Make only Rhino and Zebra Blue */
+.top {
+  color: blue;
+}
+
+/* Please Make only Hufflepuff Gold */
+.middle .badger {
+  color: gold;
+}
+/* Please select Duck with the highest level of specificity possible */
+body article.areDucksDinosaurs > h2.likesToQuack {
+  color: black !important;
+}
+
+/* Please select Rhino with the highest level of specificity possible */
+#rhino {
+  color: blue !important;
+}

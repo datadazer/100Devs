@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  clear: both;
+}
+
+header, footer {
+  width: 100%;
+  height: 100px;
+  background-color: lightgray;
+  border: 3px solid black;
+  clear: both;
+}
+
+body section {
+  float: left;
+  width: 33.3333%;
+  height: 300px;
+  background-color: grey;
+  border: 3px solid black;
+}
