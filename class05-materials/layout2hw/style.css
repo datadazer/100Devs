@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header, footer {
+  background-color: lightgrey;
+  border: 1px solid darkgrey;
+  height: 100px;
+  width: 100%;
+  clear: both;
+}
+
+section {
+  background-color: lightgrey;
+  border: 1px solid darkgrey;
+  float: left;
+  height: 300px;
+  width: 33.3333%;
+}
+
+section:first-of-type {
+  float: none;
+  height: 200px;
+  width: 100%;
+  clear: both;
+}
+
+section:last-of-type {
+  width: 66.6666%;
+}
