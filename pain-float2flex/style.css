@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: darkgrey;
+}
+
+header, footer {
+  height: 100px;
+  background-color: lightgray;
+  border: 1px solid darkgray;
+}
+
+.main {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+section {
+  height: 200px;
+  width: 33.3333%;
+  background-color: lightgrey;
+  border: 1px solid darkgray;
+}
+
+.large {
+  width: 50%;
+  height: 300px;
+}
+
+@media screen and (max-width: 600px) {
+  section, .large {
+    background-color: cornflowerblue;
+    width: 100%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  section, .large {
+    background-color: blanchedalmond;
+    width: 33.3333%;
+  }
+
+  .large {
+    width: 100%;
+  }
+}
