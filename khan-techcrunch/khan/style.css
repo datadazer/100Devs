@@ -20,16 +20,16 @@ nav {
 }
 
 ul {
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
   list-style: none;
   text-align: center;
-  padding: 0;
+  padding: 0 8px;
 }
 
 li {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 6px 16px;
   line-height: 40px;
 }
 
@@ -47,10 +47,11 @@ li:first-child, li:nth-child(2) {
   float: left;
 }
 
-ul > li > input {
+ul > li input {
   height: 40px;
   background-color: #f0f1f2;
   border: none;
+  border-radius: 4px;
   padding: 0 12px;
   color: #1965f2;
   font-size: 1.6rem;
@@ -64,4 +65,49 @@ ul > li > a {
 ul > li > a > span {
   font-size: 0.6em;
   padding-left: 6px;
+}
+
+section {
+  padding: 20px 60px;
+}
+
+section > img {
+  float: left;
+  width: 50%;
+}
+
+h1 {
+  color: #21242c;
+  font-size: 3.2em;
+  font-weight: 600;
+  font-family: 'Source Serif Pro', 'Noto Serif', serif;
+}
+
+h1 > span {
+  display: block;
+}
+
+main {
+  margin-top: 100px;
+  height: 100vh;
+}
+
+main a.btn {
+  margin: 12px 2px;
+}
+
+a.btn {
+  display: inline-block;
+  background-color: #1965f2;
+  color: #FFF;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+}
+
+p {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #21242c;
+  line-height: 32px;
 }
