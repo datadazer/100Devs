@@ -2,35 +2,66 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
+  font-family: "Lato", "Helvetica", sans-serif;
+  font-size: 1.6rem;
   margin: 0;
 }
 
 nav {
   max-width: 100%;
   border-bottom: 1px solid rgb(197, 197, 197);
-  padding: 12px 0;
+  padding: 2px 0;
+  font-weight: 700;
 }
 
 ul {
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
   list-style: none;
+  text-align: center;
+  padding: 0;
 }
 
 li {
   display: inline-block;
   padding: 6px 12px;
+  line-height: 40px;
 }
 
 li:nth-child(4), li:nth-child(5), li:nth-child(6) {
   float: right;
 }
 
-li:nth-child(3) {
+ul > li:nth-child(3) > a {
   padding: 0 auto;
+  color: #092a66;
+  font-size: 1.4em;
+}
+
+li:first-child, li:nth-child(2) {
+  float: left;
+}
+
+ul > li > input {
+  height: 40px;
+  background-color: #f0f1f2;
+  border: none;
+  padding: 0 12px;
+  color: #1965f2;
+  font-size: 1.6rem;
 }
 
 ul > li > a {
+  color: #1965f2;
   text-decoration: none;
+}
+
+ul > li > a > span {
+  font-size: 0.6em;
+  padding-left: 6px;
 }
