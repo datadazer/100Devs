@@ -1,0 +1,75 @@
+/**** Base Styles ****/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+/**** Layout Styles ****/
+nav {
+  font-size: 1.2em;
+  position: fixed;
+  float: left;
+  height: 100vh;
+  width: 200px;
+}
+
+main {
+  margin-left: 200px;
+}
+
+main section {
+  clear: both;
+}
+
+main > section:nth-child(1) {
+  float: left;
+  width: 60%;
+}
+
+aside {
+  float: right;
+  width: 40%;
+}
+
+section > ul {
+  padding: 0;
+}
+
+/**** Component Styles ****/
+nav ul li {
+  padding: 8px 2px;
+}
+
+main > section > h4 {
+  margin: 0;
+  padding: 19.92px 0;
+}
+
+main > section > img {
+  width: 100%;
+}
+
+main > section > ul > li img {
+  width: 200px;
+}
