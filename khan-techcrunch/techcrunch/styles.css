@@ -61,6 +61,12 @@ nav ul li {
   padding: 8px 2px;
 }
 
+nav ul li:nth-child(1) a {
+  font-size: 1.6em;
+  font-weight: 700;
+  color: rgb(25, 206, 25);
+}
+
 main > section > h4 {
   margin: 0;
   padding: 19.92px 0;
@@ -72,4 +78,9 @@ main > section > img {
 
 main > section > ul > li img {
   width: 200px;
+}
+
+aside ul li {
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 4px;
 }
