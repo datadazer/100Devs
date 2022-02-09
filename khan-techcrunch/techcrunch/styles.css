@@ -8,6 +8,7 @@ html {
 }
 
 body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   margin: 0;
 }
@@ -22,7 +23,8 @@ ul {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.3em;
+  margin: 0 0 8px 0;
 }
 
 /**** Layout Styles ****/
@@ -44,6 +46,7 @@ main section {
 
 main > section:nth-child(1) {
   float: left;
+  padding-left: 20px;
   width: 60%;
 }
 
@@ -76,11 +79,22 @@ main > section > img {
   width: 100%;
 }
 
-main > section > ul > li img {
-  width: 200px;
-}
-
 aside ul li {
   border-bottom: 1px solid lightgrey;
   padding-bottom: 4px;
+}
+
+section ul li div:first-child {
+  float: left;
+  max-width: 33.3333%;
+}
+
+section ul li p {
+  float: left;
+  width: 33.3333%;
+}
+
+section ul li img {
+  width: 33.3333%;
+  padding: 20px 20px 20px 20px;
 }
