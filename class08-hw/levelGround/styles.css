@@ -14,7 +14,7 @@ body {
 nav {
   position: fixed;
   width: 100%;
-  background-color: #fff;
+  background-color: #485566;
 }
 
 ul {
@@ -64,6 +64,10 @@ nav ul li:nth-child(3) {
   margin-left: -64px;
 }
 
+nav a {
+  color: #fff;
+}
+
 footer {
   background-color: #1d2e40;
   margin: 0;
@@ -77,4 +81,10 @@ footer h6 {
 
 footer a {
   color: #fff;
+}
+
+@media screen and (min-width: 600px) {
+  section {
+    padding: 60px 10%;
+  }
 }
