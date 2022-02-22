@@ -1,4 +1,3 @@
-let bodyEl = document.querySelector('body');
 const colorsLibrary = {
   purple: "rgba(241,63,247,1)",
   green: "rgba(0,253,81,1)",
@@ -7,10 +6,14 @@ const colorsLibrary = {
 }
 
 Object.keys(colorsLibrary).forEach((colorId) => {
-  document.getElementById(colorId).onclick = changeBackground;
+  if (!document.getElementById(colorId)) {
+    throw `Element with id: ${colorId} does not exist`;
+  }
+    document.getElementById(colorId).onclick = changeBackground;
 })
 
 function changeBackground() {
+  let bodyEl = document.querySelector('body');
   bodyEl.style.backgroundColor = colorsLibrary[this.id];
   bodyEl.style.color = "white";
 }
