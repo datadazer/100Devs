@@ -1,13 +1,14 @@
 const colorsLibrary = {
   purple: "rgba(241,63,247,1)",
   green: "rgba(0,253,81,1)",
-  blue: "rgba(0,254,255)",
+  ble: "rgba(0,254,255)",
   grey: "darkgrey"
 }
 
 Object.keys(colorsLibrary).forEach((colorId) => {
   if (!document.getElementById(colorId)) {
-    throw `Element with id: ${colorId} does not exist`;
+    console.error(`Element with id: ${colorId} does not exist.`);
+    return;
   }
     document.getElementById(colorId).onclick = changeBackground;
 })
