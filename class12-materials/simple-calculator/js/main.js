@@ -3,7 +3,7 @@ let total = 0;
 document.querySelector('#pumpkin').addEventListener('click', () => { performMath(0)});
 document.querySelector('#dominosPizza').addEventListener('click', () => { performMath(3)});
 document.querySelector('#zebra').addEventListener('click', () => { performMath(9)});
-document.querySelector('#cantThinkOfAnything').addEventListener('click', () => { performMath(-2)})
+document.querySelector('#cantThinkOfAnything').addEventListener('click', () => { performMath(-2)});
 
 function performMath(operator) {
   if (operator === 0) {
